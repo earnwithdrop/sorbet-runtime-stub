@@ -21,6 +21,9 @@ module T
     def type_parameter(name); end
     def untyped; end
 
+    # https://sorbet.org/docs/type-assertions#tbind
+    def bind(_self, klass); end
+
     def assert_type!(value, _type, _checked: true)
       value
     end
